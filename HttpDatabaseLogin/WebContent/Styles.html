@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Style</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/touchTouch.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/script.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script src="js/camera.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#camera_wrap').camera({
+    loader: false,
+    pagination: false ,
+    minHeight: '400',
+    thumbnails: true,
+    height: '46.32478632478632%',
+    caption: false,
+    navigation: false,
+    fx: 'mosaic'
+  });
+  $('.gallery .gall_item').touchTouch();
+ });
+</script>
+</head>
+<body class="page1" id="top">
+<!--header-->
+<div class="main">
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <h1 class="logo">
+        <a href="index.html">Dance 'til Dawn.<span>MOVE your dance school</span>
+        </a>
+      </h1>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <section id="stuck_container">
+  <!--Stuck menu-->
+    <div class="container_12">
+        <div class="grid_12">
+          <div class="navigation ">
+            <nav>
+              <ul class="sf-menu">
+               <li class="current"><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="classes.html">Classes</a></li>
+               <li><a href="staff.html">Staff</a></li>
+               <li><a href="contacts.html">Contacts</a></li>
+               <li><a href="LogOutServlet">Logout</a></li>
+                 <li><a href="ProfileServlet">Profile</a> </li>
+             </ul>
+            </nav>
+            <div class="clear"></div>
+          </div>
+         <div class="clear"></div>
+     </div>
+     <div class="clear"></div>
+    </div>
+  </section>
+</header>
+<h4> We have different Styles of dances</h4>
+<p1>Classical</p1><br><br>
+<p1>Hiphop</p1><br><br>
+<p1>Salsa</p1><br><br>
+<p1>Westren</p1><br><br>
+</body>
+</html>
